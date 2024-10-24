@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(203, 214, 200),rgb(193, 126, 208) );
+    padding: 20px; 
+}
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto 20px;
+    padding: 60px 50px 90px;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+}
+.todo-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    background-color: #edeef0;
+    gap: 3px;
+    margin-top: 3rem;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 1.15rem; 
+}
+button{
+    border: none;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.15rem;
+    cursor: pointer;
+    background-color: rgb(169, 220, 50);
+}
+#work{
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+#all{
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+button:hover{
+    background-color: rgb(182, 219, 96);
+}
+
+ul li{
+    list-style: none;
+    font-size: 1rem;
+    padding: 30px 30px 20px 50px;
+    user-select: none;
+    cursor: pointer;  
+    position: relative; 
+    line-height: 0.7rem;
+}
+ul li button{
+    position: absolute;
+    right: 0;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    background-color:  rgb(169, 220, 50);
+}
+ul li span{
+    font-size: 1.3rem;
+    margin-left: 60px;
+}
+.completed{
+    text-decoration: line-through;
+    color:brown;
+}
+
+
+
+
